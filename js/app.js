@@ -1,7 +1,14 @@
 console.log('Script app.js connected');
 
-// Ett "Top level" object, ett globalt "App"-objekt (egendefinerat)
+const baseUrl = "https://api.jsonbin.io/v3/b/"
+const ourTodoUrl = baseUrl + "6396ebc834ae3620ec2c0fea"
+const masterKey = "$2b$10$c3rCYF/JweXiAt2sfztk8e4BOiNBxCVTCmRphrLYbvugx5iDdRLkS"
 
+console.log('BaseUrl:', baseUrl)
+console.log('OurTodoUrl:', ourTodoUrl)
+console.log('MasterKey:', masterKey)
+
+// Ett "Top level" object, ett globalt "App"-objekt (egendefinerat)
 const App = {
   listOfTodos: [], //vår lista av todos ska in här
   elements: { //Våra "main"-element via ska arbeta mot stoppar vi in här
@@ -13,6 +20,33 @@ const App = {
       createTodoItem("Vardagsrum", "Städa under soffan (dammigt)", Date.now() + 2),
       createTodoItem("Handla", "Glömde köpa ost på burk, till våra tacochips", Date.now() + 3),
     )
+  },
+  fetchTodos: function () {
+    // fetch, inbyggd funktion för att hämta en url
+    fetch(ourTodoUrl, {
+      headers: {
+        "X-Master-Key": masterKey, //våran auth / identifering mot databasen (om privat)
+      }
+    })
+      .then(function (response) {
+        return response.json(); //skicka vidare vårat svar till nästa .then
+      })
+      .then((response) => {
+        let data = response; //data-variabeln sätts till response
+
+        console.log("Data:", data.record) //loggar vår data.record som är en Array av våra items
+
+        data.record.forEach((obj) => { //Loopar igenom våra items i data.record arrayn
+          this.listOfTodos.push(obj) //Lägger till dessa i vår App.listOfTodos
+        });
+
+        this.render(); //Kallar på vår render-funktion för att "måla upp" vyerna
+
+      })
+      .catch(function (err) {
+        console.log("Error: " + err)
+      })
+
   },
   create: function () { //Våran funktion för att skapa en Todo
     const inputTitle = document.querySelector("input[name='todo-title']")
@@ -65,7 +99,7 @@ const App = {
         App.remove(item.id);
       })
 
-      newBtnCheck.addEventListener("click", function() {
+      newBtnCheck.addEventListener("click", function () {
         App.update(item.id)
       })
 
@@ -106,6 +140,7 @@ function onFormSubmit() {
 
 
 App.addInitialTodos()
+App.fetchTodos()
 App.render()
 
 function logApp() {
