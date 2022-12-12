@@ -1,8 +1,8 @@
 console.log('Script app.js connected');
 
 const baseUrl = "https://api.jsonbin.io/v3/b/"
-const ourTodoUrl = baseUrl + "6396ebc834ae3620ec2c0fea"
-const masterKey = "$2b$10$c3rCYF/JweXiAt2sfztk8e4BOiNBxCVTCmRphrLYbvugx5iDdRLkS"
+const ourTodoUrl = baseUrl + "Fyll i din BinId"
+const masterKey = "Fyll i din X-Master-Key"
 
 console.log('BaseUrl:', baseUrl)
 console.log('OurTodoUrl:', ourTodoUrl)
