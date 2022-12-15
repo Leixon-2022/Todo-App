@@ -14,33 +14,29 @@ const App = {
   elements: { //Våra "main"-element via ska arbeta mot stoppar vi in här
     container: document.getElementById("todo-container")
   },
-  addInitialTodos: function () { //Vi skapar upp 3 initiala Todos som ska renderas vid start
-    this.listOfTodos.push(
-      createTodoItem("Köket", "Diska vår disk för hand", Date.now() + 1),
-      createTodoItem("Vardagsrum", "Städa under soffan (dammigt)", Date.now() + 2),
-      createTodoItem("Handla", "Glömde köpa ost på burk, till våra tacochips", Date.now() + 3),
-    )
-  },
   fetchTodos: function () {
     // fetch, inbyggd funktion för att hämta en url
     fetch(ourTodoUrl, {
+      method: "GET", //Default, HÄMTA
       headers: {
-        "X-Master-Key": masterKey, //våran auth / identifering mot databasen (om privat)
+        "X-Master-Key": masterKey,
       }
     })
       .then(function (response) {
-        return response.json(); //skicka vidare vårat svar till nästa .then
+        return response.json();
       })
       .then((response) => {
-        let data = response; //data-variabeln sätts till response
+        let data = response;
 
-        console.log("Data:", data.record) //loggar vår data.record som är en Array av våra items
+        console.log("Data:", data.record)
 
-        data.record.forEach((obj) => { //Loopar igenom våra items i data.record arrayn
-          this.listOfTodos.push(obj) //Lägger till dessa i vår App.listOfTodos
+        this.listOfTodos = [] //Denna
+
+        data.record.forEach((obj) => {
+          this.listOfTodos.push(obj)
         });
 
-        this.render(); //Kallar på vår render-funktion för att "måla upp" vyerna
+        this.render();
 
       })
       .catch(function (err) {
@@ -48,26 +44,78 @@ const App = {
       })
 
   },
-  create: function () { //Våran funktion för att skapa en Todo
+  create: function () {
     const inputTitle = document.querySelector("input[name='todo-title']")
     const inputText = document.querySelector("input[name='todo-text']")
-    //skickar med värdena till funktionen addTodoItem
-    //värdena kommer från våra inputs, hämtas via element~.value
-    this.listOfTodos.push(createTodoItem(inputTitle.value, inputText.value))
-    this.render()
+
+    const newItem = createTodoItem(inputTitle.value, inputText.value)
+    this.listOfTodos.push(newItem)
+
+    fetch(ourTodoUrl, {
+      method: "PUT", // "putta upp"
+      headers: {
+        "X-Master-Key": masterKey,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(this.listOfTodos)
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then((response) => {
+
+        let data = response;
+        console.log(data)
+
+        //Vi kallar på vår fetchTodos() igen för att hämta items på nytt, för vi har LAGT TILL ett item
+        this.fetchTodos()
+      })
+      .catch(function (err) {
+        console.log('Error: ' + err)
+      });
   },
-  update: function (id) { //Våran funktion för att update en Todo
+  update: function (id) {
     let findItemIndex = this.listOfTodos.findIndex(item => item.id == id)
     this.listOfTodos[findItemIndex].checked = !this.listOfTodos[findItemIndex].checked
 
     this.render()
   },
-  remove: function (id) { //Våran funktion för att ta bort en Todo
-    this.render()
+  remove: function (id) {
+
+    let findItemIndex = this.listOfTodos.findIndex(item => item.id === id);
+
+    //Ta bort det findItemIndex vi hittar från får array
+    this.listOfTodos.splice(findItemIndex, 1);
+
+    //Skicka vår nya lista till "servern"
+    fetch(ourTodoUrl, {
+      method: "PUT",
+      headers: {
+        "X-Master-Key": masterKey,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(this.listOfTodos)
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then((response) => {
+
+        let data = response;
+        console.log(data)
+
+        //Vi kallar på vår fetchTodos() igen för att hämta items på nytt, för vi har tagit BORT ett item
+        this.fetchTodos()
+      })
+      .catch(function (err) {
+        console.log('Error: ' + err)
+      })
   },
   render: function () { //Våran funktion för rendera (rita upp i vår HTML i detta fall) alla Todos
 
     this.elements.container.innerHTML = "" // Vi tömmer våran nuvarande "container"
+
+    resetForm() //Återställer våra forminputs
 
     // Vi loopar igenom alla items i listOfTodos
     this.listOfTodos.forEach((item) => {
@@ -138,6 +186,10 @@ function onFormSubmit() {
   App.create()
 }
 
+function resetForm() {
+  document.querySelector("input[name='todo-title']").value = ''
+  document.querySelector("input[name='todo-text']").value = ''
+}
 
 App.addInitialTodos()
 App.fetchTodos()
