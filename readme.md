@@ -19,8 +19,8 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   ![](assets/todo-item.jpg)
 
 - **Add Item knapp & Formulär**
-  1. Skapa knapp för Add Item & ett Formulär. 
-    - Vi har 'Title' & 'Text' där som vi hämtar, (Tänk på att funktionen måste ändras i båda fall)
+  1. Skapa knapp för Add Item & ett Formulär: 
+     Vi har 'Title' & 'Text' där som vi hämtar, (Tänk på att funktionen måste ändras i båda fall)
   2. Lägg till så man kan skicka med colorIndex(1-3), alltså en input för färg
 
  ![](assets/form.jpg)
@@ -39,12 +39,14 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 
   ![](assets/root-variables-css.jpg)
 
-  1. Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler). Variablernas värde, går att skriva som 0.5rem etc.
+  1. Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler). 
+      Variablernas värde, går att skriva som 0.5rem etc.
   3. Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
 
 
 #### **Extra för de som hinner:**
 1. AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
-förmulär återfinns. Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
+förmulär återfinns. 
+    Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
 
 2. Snygga till koden, extrahera funktionalitet till separata funktioner
