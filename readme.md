@@ -43,7 +43,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   3. Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
 
 
-#### **Extra för de som hinner med en del:**
+#### **Extra för de som hinner:**
 1. AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
 förmulär återfinns. Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
 
