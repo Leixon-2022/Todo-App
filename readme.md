@@ -15,6 +15,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 - Kort / TodoItem
   - Rita en design i Figma
   - Implementera i CSS (denna har vi skapat dynamiskt via JS)
+
   ![](assets/todo-item.jpg)
 
 - Add Item knapp & Formulär
