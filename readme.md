@@ -35,3 +35,5 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 - AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
 förmulär återfinns.
 - Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
+
+- Snygga till koden, extrahera funktionalitet till separata funktioner
