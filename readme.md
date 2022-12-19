@@ -23,12 +23,11 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   Använda input "color-picker"
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
 
-<!-- Snabba -->
 - Ta bort vår knapp för Log AppData, (funktionen kan ligga kvar)
 - Hämta in ett snyggare typsnitt, alltså en Font (valfri)
 - Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler)
-- Variabler kan skrivas i 0.5rem etc. så går också att styra vissa andra saker
-
+- Variablernas värde, går att skriva som 0.5rem etc.
+  - Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
 
 
 #### **Extra för de som hinner med en del:**
