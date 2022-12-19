@@ -67,5 +67,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 förmulär återfinns. 
     Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
 
--  Snygga till koden, extrahera funktionalitet till separata funktioner
+- Snygga till koden, extrahera funktionalitet till separata funktioner
+
 - Lägg över våra elements i vårt App.elements-objekt, referera på alla ställen
+
+  _Exempel_
+  ![image](https://user-images.githubusercontent.com/47057279/208443925-a328c3bd-3782-4477-96dc-49709668f458.png)
+
