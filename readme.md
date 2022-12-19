@@ -24,6 +24,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   ![](assets/form.jpg)
   - Lägg till så man kan skicka med colorIndex(1-3), alltså <input type="number"> för färg
   (Tänk på att funktionen i vår JavaScript också måste ändras)
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
   Extra:
   Använda input "color-picker"
