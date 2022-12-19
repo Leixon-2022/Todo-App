@@ -12,11 +12,18 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 
   ![](assets/header-icon-text.jpg)
 
+  Exempel
+  ![image](https://user-images.githubusercontent.com/47057279/208440689-95caf061-f174-43a1-9e9d-3dce3256ebdf.png)
+
 - **Kort / TodoItem**
   1. Rita en design i Figma
   2. Implementera i CSS (denna har vi skapat dynamiskt via JS)
 
   ![](assets/todo-item.jpg)
+
+  Exempel
+  ![image](https://user-images.githubusercontent.com/47057279/208440802-608c969a-258c-4b13-b9d7-a612e17466e7.png)
+
 
 - **Add Item knapp & Formulär**
 
