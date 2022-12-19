@@ -10,9 +10,12 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   - Snygga till text
   - Implementera i HTML & CSS
 
+  ![](assets/header-icon-text.jpg)
+
 - Kort / TodoItem
   - Rita en design i Figma
   - Implementera i CSS (denna har vi skapat dynamiskt via JS)
+  ![](assets/todo-item.jpg)
 
 - Add Item knapp & Formulär
   - Vi har Title & Text där som vi hämtar
