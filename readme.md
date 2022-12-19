@@ -19,11 +19,11 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   ![](assets/todo-item.jpg)
 
 - **Add Item knapp & Formulär**
-  Vi har redan 'Title' & 'Text' där som vi hämtar.
-  1. Lägg till så man kan skicka med colorIndex(1-3), alltså en input för färg
-  (Tänk på att funktionen måste ändras i båda fall)
 
- ![](assets/form.jpg)
+  Vi har redan 'Title' & 'Text' som vi hämtar från våra input.
+  ![](assets/form.jpg)
+  - Lägg till så man kan skicka med colorIndex(1-3), alltså <input type="number"> för färg
+  (Tänk på att funktionen i vår JavaScript också måste ändras)
 
   Extra:
   Använda input "color-picker"
