@@ -35,13 +35,11 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 
 - Hämta in ett snyggare typsnitt, alltså en **Font** (valfri)
 
-- **Justera färger**
-
   ![](assets/root-variables-css.jpg)
 
-  1. Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler). 
-      Variablernas värde, går att skriva som 0.5rem etc.
-  3. Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
+- Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler). 
+  - Variablernas värde, går att skriva som 0.5rem etc.
+- Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
 
 
 #### **Extra för de som hinner:**
