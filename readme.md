@@ -35,9 +35,15 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   (Tänk på att funktionen i vår JavaScript också måste ändras)
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
+  Exempel
+  ![image](https://user-images.githubusercontent.com/47057279/208442272-854d868d-b539-44f5-a4b7-3a0a3f0f996c.png)
+
+
   Extra:
   Använda input "color-picker"
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+  ![image](https://user-images.githubusercontent.com/47057279/208442747-da4a0907-45c2-4f4f-a318-2d977c5c5d83.png)
+
 
 - Ta bort vår knapp för **Log AppData**, (funktionen kan ligga kvar)
 
