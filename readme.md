@@ -23,6 +23,8 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   (Tänk på att funktionen måste ändras i båda fall)
   - Ni ska lägga till så man kan skicka med colorIndex(1-3), alltså en input för färg
 
+ ![](assets/form.jpg)
+
   Extra:
   Använda input "color-picker"
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
