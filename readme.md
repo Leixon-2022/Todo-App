@@ -16,6 +16,8 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   
   ![image](https://user-images.githubusercontent.com/47057279/208440689-95caf061-f174-43a1-9e9d-3dce3256ebdf.png)
 
+<hr style="border:0.5px solid gray"/>
+
 - **Kort / TodoItem**
   1. Rita en design i Figma
   2. Implementera i CSS (denna har vi skapat dynamiskt via JS)
@@ -39,8 +41,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
   ![image](https://user-images.githubusercontent.com/47057279/208442272-854d868d-b539-44f5-a4b7-3a0a3f0f996c.png)
 
-
-  Extra:
+  #### **Extra för de som hinner:**
   Använda input "color-picker"
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
   
@@ -48,10 +49,13 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
   ![image](https://user-images.githubusercontent.com/47057279/208442747-da4a0907-45c2-4f4f-a318-2d977c5c5d83.png)
 
+<hr style="border:0.5px solid gray"/>
 
 #### Ta bort vår knapp för **Log AppData**, (funktionen kan ligga kvar)
 
   ![](assets/log-appdata-btn.jpg)
+
+<hr style="border:0.5px solid gray"/>
 
 #### Hämta in ett snyggare typsnitt, alltså en **Font** (valfri)
 
@@ -65,6 +69,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
 
 #### **Extra för de som hinner:**
+
 - AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
 förmulär återfinns. 
     Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
