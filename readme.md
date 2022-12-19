@@ -44,9 +44,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
 
 #### **Extra för de som hinner:**
-1. AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
+- AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
 förmulär återfinns. 
     Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
 
-2. Snygga till koden, extrahera funktionalitet till separata funktioner
-3. Lägg över våra elements i vårt App.elements-objekt, referera på alla ställen
+-  Snygga till koden, extrahera funktionalitet till separata funktioner
+- Lägg över våra elements i vårt App.elements-objekt, referera på alla ställen
