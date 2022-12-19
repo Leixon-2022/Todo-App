@@ -8,7 +8,7 @@ console.log('BaseUrl:', baseUrl)
 console.log('OurTodoUrl:', ourTodoUrl)
 console.log('MasterKey:', masterKey)
 
-// Ett "Top level" object, ett globalt "App"-objekt (egendefinerat)
+
 const App = {
   listOfTodos: [], //vår lista av todos ska in här
   elements: { //Våra "main"-element via ska arbeta mot stoppar vi in här
@@ -191,7 +191,6 @@ function resetForm() {
   document.querySelector("input[name='todo-text']").value = ''
 }
 
-App.addInitialTodos()
 App.fetchTodos()
 App.render()
 
