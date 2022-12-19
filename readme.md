@@ -80,6 +80,6 @@ förmulär återfinns.
 
   _Exempel_
   
-  ![image](https://user-images.githubusercontent.com/47057279/208443925-a328c3bd-3782-4477-96dc-49709668f458.png)
+  ![image](https://user-images.githubusercontent.com/47057279/208447368-4ac725cd-9068-4d87-ade4-da7f29c2ac68.png)
   
   ![image](https://user-images.githubusercontent.com/47057279/208446656-7cd44431-d9c0-403c-a2dc-7e46b2661f5e.png)
