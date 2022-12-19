@@ -19,9 +19,10 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   ![](assets/todo-item.jpg)
 
 - **Add Item knapp & Formulär**
-  Skapa knapp för Add Item & ett Formulär: 
-  Vi har 'Title' & 'Text' där som vi hämtar, (Tänk på att funktionen måste ändras i båda fall)
+  Skapa knapp för Add Item & ett Formulär har vi redan. 
+  Vi har 'Title' & 'Text' där som vi hämtar, 
   1. Lägg till så man kan skicka med colorIndex(1-3), alltså en input för färg
+  (Tänk på att funktionen måste ändras i båda fall)
 
  ![](assets/form.jpg)
 
