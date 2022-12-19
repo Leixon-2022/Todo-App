@@ -69,9 +69,12 @@ förmulär återfinns.
 
 - Snygga till koden, extrahera funktionalitet till separata funktioner
 
+
 - Lägg över våra elements i vårt App.elements-objekt, referera på alla ställen
 
   _Exempel_
   
   ![image](https://user-images.githubusercontent.com/47057279/208443925-a328c3bd-3782-4477-96dc-49709668f458.png)
+  
+  ![image](https://user-images.githubusercontent.com/47057279/208444905-28a1be62-0b26-4200-9004-b34f23b637e3.png)
 
