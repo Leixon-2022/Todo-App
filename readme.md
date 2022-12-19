@@ -30,9 +30,17 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
 
 - Ta bort vår knapp för Log AppData, (funktionen kan ligga kvar)
+
+  ![](assets/log-appdata-btn.jpg)
+
 - Hämta in ett snyggare typsnitt, alltså en Font (valfri)
-- Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler)
-- Variablernas värde, går att skriva som 0.5rem etc.
+
+- Justera färger
+
+  ![](assets/root-variables-css.jpg)
+
+  - Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler)
+  - Variablernas värde, går att skriva som 0.5rem etc.
   - Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
 
 
