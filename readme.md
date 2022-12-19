@@ -5,7 +5,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 ### Dagens uppgifter & morgondagens
 ## 2022-12-19 & 2022-12-20
 
-- **Header** med en Logo-typ som ska förbättras
+#### Header med en Logo-typ som ska förbättras
   1. Rita en design i Figma med en ikon (rita eller importera)
   2. Snygga till text 
   3. Implementera i HTML & CSS
@@ -27,7 +27,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   ![image](https://user-images.githubusercontent.com/47057279/208440802-608c969a-258c-4b13-b9d7-a612e17466e7.png)
 
 
-- **Add Item knapp & Formulär**
+#### Add Item knapp & Formulär**
 
   Vi har redan 'Title' & 'Text' som vi hämtar från våra input.
   ![](assets/form.jpg)
@@ -49,23 +49,27 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
   ![image](https://user-images.githubusercontent.com/47057279/208442747-da4a0907-45c2-4f4f-a318-2d977c5c5d83.png)
 
 
-- Ta bort vår knapp för **Log AppData**, (funktionen kan ligga kvar)
+#### Ta bort vår knapp för **Log AppData**, (funktionen kan ligga kvar)
 
   ![](assets/log-appdata-btn.jpg)
 
-- Hämta in ett snyggare typsnitt, alltså en **Font** (valfri)
+#### Hämta in ett snyggare typsnitt, alltså en **Font** (valfri)
 
-  ![](assets/root-variables-css.jpg)
+<hr style="border:0.5px solid gray"/>
 
-- Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler). 
+#### Justera färger, eventuellt lägga in lite egna i :root (alltså egna variabler). 
   - Variablernas värde, går att skriva som 0.5rem etc.
-- Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
+    ![](assets/root-variables-css.jpg)
+#### Behöver ni styra fler variabler som standard i er CSS? (Analysera vad som återanvänds)
+
 
 
 #### **Extra för de som hinner:**
 - AddItem-formulär kan flyttas till en ny sida, alltså man navigerar till en ny HTML-sida där
 förmulär återfinns. 
     Efter skickat AddItem ska man åka tillbaka till huvudsidan och se sitt nyligen tillagda TodoItem i listan
+    
+<hr style="border:0.5px solid gray"/>
 
 - Snygga till koden, extrahera funktionalitet till separata funktioner
 
@@ -75,6 +79,7 @@ förmulär återfinns.
 
   ![image](https://user-images.githubusercontent.com/47057279/208445811-8ed9507e-c2d4-4907-b571-03dca8f49a73.png)
 
+<hr style="border:0.5px solid gray"/>
 
 - Lägg över våra elements i vårt App.elements-objekt, referera på alla ställen
 
