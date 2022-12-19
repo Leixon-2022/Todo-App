@@ -5,7 +5,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 ### Dagens uppgifter & morgondagens
 ## 2022-12-19 & 2022-12-20
 
-- Header med en Logo-typ som ska förbättras
+- **Header** med en Logo-typ som ska förbättras
   #1. Rita en design i Figma med en ikon (rita eller importera)
   #2. Snygga till text 
   #3. Implementera i HTML & CSS
