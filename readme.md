@@ -12,7 +12,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 
   ![](assets/header-icon-text.jpg)
 
-  Exempel
+  _Exempel_
   
   ![image](https://user-images.githubusercontent.com/47057279/208440689-95caf061-f174-43a1-9e9d-3dce3256ebdf.png)
 
@@ -22,7 +22,7 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
 
   ![](assets/todo-item.jpg)
 
-  Exempel
+  _Exempel_
   
   ![image](https://user-images.githubusercontent.com/47057279/208440802-608c969a-258c-4b13-b9d7-a612e17466e7.png)
 
@@ -35,13 +35,17 @@ alt + pilar (upp | ner ) för att flytta rad ni står på upp | ner
   (Tänk på att funktionen i vår JavaScript också måste ändras)
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
 
-  Exempel
+  _Exempel_
+
   ![image](https://user-images.githubusercontent.com/47057279/208442272-854d868d-b539-44f5-a4b7-3a0a3f0f996c.png)
 
 
   Extra:
   Använda input "color-picker"
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+  
+  _Exempel_
+
   ![image](https://user-images.githubusercontent.com/47057279/208442747-da4a0907-45c2-4f4f-a318-2d977c5c5d83.png)
 
 
